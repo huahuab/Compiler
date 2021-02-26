@@ -1,0 +1,35 @@
+S -> ( S ) S | epsilon
+
+
+S -> a A
+A -> c A | d
+
+E -> E + n | n
+
+S -> a A | b B
+A -> c A | d
+B -> c B | d
+
+E -> E + T | T
+T -> T * F | F
+F -> ( E ) | id
+
+S -> C C 
+C -> c C | d
+
+只能LR1不能LALR1
+S -> a A d | b B d | a B e | b A e
+A -> c
+B -> c
+
+
+S -> id | V = E
+V -> id
+E -> V | n
+
+3类文法(只能LR)
+S -> a A d
+S -> b A c
+S -> a e c
+S -> b e d
+A -> e

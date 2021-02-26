@@ -1,0 +1,79 @@
+Number of symbols:8
+epsilon $ start S a A c d 
+
+number of status:7
+0
+S -> .a A 
+start -> .S 
+
+1
+start -> S .
+
+2
+A -> .c A 
+A -> .d 
+S -> a .A 
+
+3
+S -> a A .
+
+4
+A -> .c A 
+A -> .d 
+A -> c .A 
+
+5
+A -> d .
+
+6
+A -> c A .
+
+Number of Grammars:4
+Extension Grammar:
+start -> S 
+S -> a A 
+A -> c A 
+A -> d 
+LRmap:
+     $     a     c     d     S     A
+          S2                 1      
+   acc                              
+                S4    S5           3
+    R1    R1    R1    R1            
+                S4    S5           6
+    R3    R3    R3    R3            
+    R2    R2    R2    R2            
+A -> d 
+A -> c A 
+A -> c A 
+S -> a A 
+Legal token sequence
+Analysis tree:
+Number of nodes:9
+start
+0
+son: 8 
+a
+-1
+son: 
+c
+-1
+son: 
+c
+-1
+son: 
+d
+-1
+son: 
+A
+3
+son: 4 
+A
+2
+son: 3 5 
+A
+2
+son: 2 6 
+S
+1
+son: 1 7 

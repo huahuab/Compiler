@@ -1,0 +1,78 @@
+节点号:0
+statment
+6
+val: 0
+type
+1 
+节点号:1
+assign-stmt
+13
+val: 0
+type
+2 3 4 
+节点号:2
+id
+-1
+val: 12
+int
+noson
+节点号:3
+=
+-1
+val: 0
+type
+noson
+节点号:4
+exp
+29
+val: 12
+int
+5 
+节点号:5
+rep
+34
+val: 12
+int
+6 
+节点号:6
+simple-exp
+39
+val: 12
+int
+7 8 9 
+节点号:7
+simple-exp
+40
+val: 10
+int
+10 
+节点号:8
+addop
+-1
+val: 0
+type
+noson
+节点号:9
+term
+44
+val: 2
+int
+12 
+节点号:10
+term
+44
+val: 10
+int
+11 
+节点号:11
+factor
+-1
+val: 10
+int
+noson
+节点号:12
+factor
+-1
+val: 2
+int
+noson
