@@ -1,0 +1,4 @@
+stmt-sequence -> stmt stmt-seq'
+stmt-seq' -> ; stmt-sequence
+stmt-seq' -> E | epsilon
+stmt ->	 S

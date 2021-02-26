@@ -1,0 +1,4 @@
+reserved=include|if|else|for|while|int|double|char|unsigned|signed|const|void|swich|case|continue|break|return|typedef
+id=([a-z]|[A-Z])([a-z]|[A-Z]|[0-9])*
+number=([0-9])((.([0-9]))|([0-9])*)([0-9])*
+symbol=+|-|/|&|^|!|<<|>>|!|;|<|>|.|{|}|\[|\]|\||\=|\#|\*|\(|\)|//|++|--|+\=|\*\=|-\=|/\=|'|"

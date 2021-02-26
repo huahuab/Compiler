@@ -1,0 +1,2 @@
+Comply with LL (1) grammar
+Legal token sequence

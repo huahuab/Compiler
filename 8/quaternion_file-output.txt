@@ -1,0 +1,144 @@
+def
+6 a
+0 
+0 
+def
+6 c
+0 
+0 
+def
+6 c1
+0 
+0 
+mov
+3 11
+2 3T
+0 
+mov
+2 3T
+1 a
+0 
+lab
+5 L1
+0 
+0 
+mov
+3 0
+2 4T
+0 
+gt
+1 a
+2 4T
+2 5T
+if_f
+2 5T
+3 0
+5 L2
+mov
+3 1
+2 6T
+0 
+sub
+1 a
+2 6T
+2 7T
+mov
+2 7T
+1 a
+0 
+goto
+5 L1
+0 
+0 
+lab
+5 L2
+0 
+0 
+mov
+3 62
+2 8T
+0 
+mov
+2 8T
+1 a
+0 
+read
+1 a
+0 
+0 
+read
+1 c1
+0 
+0 
+mov
+3 10
+2 9T
+0 
+eq
+1 a
+2 9T
+2 10T
+if_f
+2 10T
+3 0
+5 L3
+write
+1 a
+0 
+0 
+lab
+5 L3
+0 
+0 
+mov
+3 10
+2 11T
+0 
+mov
+2 11T
+1 a
+0 
+mov
+3 10
+2 12T
+0 
+add
+1 a
+2 12T
+2 13T
+mov
+2 13T
+1 a
+0 
+write
+1 a
+0 
+0 
+mov
+3 0
+2 20T
+0 
+mov
+2 20T
+1 a
+0 
+mov
+3 133
+2 27T
+0 
+mov
+2 27T
+1 a
+0 
+write
+1 a
+0 
+0 
+write
+1 c
+0 
+0 
+end
+0 
+0 
+0 

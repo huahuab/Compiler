@@ -1,0 +1,23 @@
+program = main ( ) { stmt-sequence }
+stmt-sequence = stmt-sequence statement ; | statement ;
+statement = if-stmt | while-stmt | assign-stmt | input-stmt | print-stmt | type-stmt
+if-stmt = if ( exp ) { stmt-sequence } | if ( exp ) { stmt-sequence } else { stmt-sequence }
+while-stmt = while ( exp ) { stmt-sequence }
+assign-stmt = Identifier = exp
+input-stmt = input ( input-content )
+input-content = input-content , Identifier | Identifier
+print-stmt = print ( print-content )
+print-content = print-content , print-idst | print-idst
+print-idst = Identifier 
+type-stmt = type identifier-stmt
+type = int | char 
+identifier-stmt = identifier-stmt , Identifier | Identifier
+exp = rep comparisonop rep | rep
+comparisonop = < | > | ==
+rep = rep bitop simple-exp | simple-exp
+bitop = & | \| | ! | ^
+simple-exp = simple-exp addop term | term
+addop = + | -
+term = term mulop factor | factor
+mulop = * | /
+factor = ( exp ) | Integer | Char | Identifier
